@@ -2,15 +2,38 @@
 
 ## Purpose
 
-Displays basic network information.
+Displays basic network information about a device, including hostname and IP address.
 
 ## Features
 
 - Hostname Lookup
 - IP Address Lookup
-- Network Information
+- Basic Network Information
+- Device Identification
 
 ## Skills Demonstrated
 
 - Networking
 - Python
+- Hostname Resolution
+- IP Addressing
+- System Information Retrieval
+
+## Example Code
+
+```python
+import socket
+
+hostname = socket.gethostname()
+ip_address = socket.gethostbyname(hostname)
+
+print("Hostname:", hostname)
+print("IP Address:", ip_address)
+```
+
+## Example Output
+
+```
+Hostname: Isla-PC
+IP Address: 192.168.1.15
+```
