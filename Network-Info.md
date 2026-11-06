@@ -33,7 +33,7 @@ print("IP Address:", ip_address)
 
 ## Example Output
 
-```
-Hostname: Isla-PC
-IP Address: 192.168.1.15
+```text
+Hostname: Example-PC
+IP Address: 192.168.1.100
 ```
