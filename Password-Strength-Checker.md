@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Evaluates password strength and provides recommendations.
+Evaluates the strength of a user-provided password and provides recommendations for improving security.
 
 ## Features
 
@@ -11,9 +11,12 @@ Evaluates password strength and provides recommendations.
 - Lowercase Detection
 - Number Detection
 - Special Character Detection
+- Password Strength Scoring
 
 ## Skills Demonstrated
 
 - Python
 - String Manipulation
 - Input Validation
+- Conditional Statements
+- Cybersecurity Fundamentals
