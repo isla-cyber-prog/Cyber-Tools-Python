@@ -23,9 +23,11 @@ Evaluates the strength of a user-provided password and provides recommendations 
 
 ## Example Code:
 
+```python
 password = input("Enter password: ")
 
 if len(password) >= 8:
     print("Good length")
 else:
     print("Too short")
+```
