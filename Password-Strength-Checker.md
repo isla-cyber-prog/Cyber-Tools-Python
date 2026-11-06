@@ -26,6 +26,9 @@ Evaluates the strength of a user-provided password and provides recommendations 
 password = input("Enter password: ")
 
 if len(password) >= 8:
+    
     print("Good length")
+
 else:
+   
     print("Too short")
