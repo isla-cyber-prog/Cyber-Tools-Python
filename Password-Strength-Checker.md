@@ -20,3 +20,12 @@ Evaluates the strength of a user-provided password and provides recommendations 
 - Input Validation
 - Conditional Statements
 - Cybersecurity Fundamentals
+
+## Example Code:
+
+password = input("Enter password: ")
+
+if len(password) >= 8:
+    print("Good length")
+else:
+    print("Too short")
