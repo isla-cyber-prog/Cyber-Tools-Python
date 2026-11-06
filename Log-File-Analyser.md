@@ -22,17 +22,19 @@ Analyses log files to identify suspicious activity and security related events.
 
   ## Example Code
 
-```python
 filename = input("Enter log file name: ")
 
-with open(filename, "r") as file:
-    log = file.read()
+try:
+    with open(filename, "r") as file:
+        log = file.read()
 
-failed_logins = log.count("FAILED LOGIN")
+    failed_logins = log.upper().count("FAILED")
 
-print("Failed Login Attempts:", failed_logins)
-```
+    print("Failed Login Attempts:", failed_logins)
 
+except FileNotFoundError:
+    print("Log file not found.")
+    
 ## Example Output
 
 ```text
