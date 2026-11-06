@@ -22,6 +22,7 @@ Analyses log files to identify suspicious activity and security related events.
 
   ## Example Code
 
+```python
 filename = input("Enter log file name: ")
 
 try:
@@ -34,7 +35,8 @@ try:
 
 except FileNotFoundError:
     print("Log file not found.")
-    
+```
+
 ## Example Output
 
 ```text
