@@ -31,10 +31,12 @@ hash_value = hashlib.sha256(data).hexdigest()
 
 print("File Hash:")
 print(hash_value)
-
+```
 ## Example output:
 
+```text
 Enter file name: document.txt
 
 File Hash:
 f2ca1bb6c7e907d06dafe4687e579fce9f1f0e4d1e5f3a4d7f6c8a9b0c1d2e3f
+```
