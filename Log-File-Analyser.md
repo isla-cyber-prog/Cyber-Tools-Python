@@ -25,16 +25,12 @@ Analyses log files to identify suspicious activity and security related events.
 ```python
 filename = input("Enter log file name: ")
 
-try:
-    with open(filename, "r") as file:
-        log = file.read()
+with open(filename, "r") as file:
+    log = file.read()
 
-    failed_logins = log.upper().count("FAILED")
+failed_logins = log.count("FAILED LOGIN")
 
-    print("Failed Login Attempts:", failed_logins)
-
-except FileNotFoundError:
-    print("Log file not found.")
+print("Failed Login Attempts:", failed_logins)
 ```
 
 ## Example Output
@@ -42,7 +38,7 @@ except FileNotFoundError:
 ```text
 Enter log file name: access.log
 
-Failed Login Attempts: 12
+Failed Login Attempts: 3
 ```
 
 ## Potential Applications
